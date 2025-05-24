@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/main_activity">
+
+    <TextView
+        android:id="@+id/txtTitleId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:text="Yunus Calculator App" />
+
+    <TextView
+        android:id="@+id/txtResultId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitleId"
+        android:textSize="25sp"
+        android:gravity="right"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="@color/black"
+        />
+
+    <TableLayout
+
+        android:id="@+id/tableId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtResultId"
+        android:orientation="vertical"
+        android:stretchColumns="*">
+
+
+        <TableRow>
+            <Button android:id="@+id/btnNum7Id" android:text="7"/>
+            <Button android:id="@+id/btnNum8Id" android:text="8"/>
+            <Button android:id="@+id/btnNum9Id" android:text="9"/>
+            <Button android:id="@+id/btnDivId" android:text="/"/>
+        </TableRow>
+
+        <TableRow>
+            <Button android:id="@+id/btnNum4Id" android:text="4"/>
+            <Button android:id="@+id/btnNum5Id" android:text="5"/>
+            <Button android:id="@+id/btnNum6Id" android:text="6"/>
+            <Button android:id="@+id/btnMulId" android:text="*"/>
+        </TableRow>
+
+        <TableRow>
+            <Button android:id="@+id/btnNum1Id" android:text="1"/>
+            <Button android:id="@+id/btnNum2Id" android:text="2"/>
+            <Button android:id="@+id/btnNum3Id" android:text="3"/>
+            <Button android:id="@+id/btnSubId" android:text="-"/>
+        </TableRow>
+
+        <TableRow>
+            <Button android:id="@+id/btnNum0Id" android:text="0"/>
+            <Button android:id="@+id/btnClearId" android:text="C"/>
+            <Button android:id="@+id/btnEqualId" android:text="="/>
+            <Button android:id="@+id/btnAddId" android:text="+"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
+
